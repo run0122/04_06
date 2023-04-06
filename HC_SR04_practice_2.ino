@@ -43,6 +43,7 @@ void setup() {
 
 void loop() {
   int reading = digitalRead(button);
+  
   if (reading == HIGH) {
     funcState = !funcState;
     delay(100);
