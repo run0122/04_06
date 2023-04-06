@@ -14,7 +14,8 @@ if (reading == HIGH) {
     delay(100);
   }
 ```
-**위와 같이 funcState가 true일 때만 초음파 센서가 작동하도록 했습니다.**
+위와 같이 funcState가 true일 때만 초음파 센서가 작동하도록 했습니다.
+---
 
 ```
   digitalWrite(trigPin, LOW);
@@ -26,7 +27,8 @@ if (reading == HIGH) {
   duration = pulseIn(echoPin, HIGH);
   distance = (duration * .0343) / 2;
 ```
-**초음파 센서는 이와 같이 작동합니다.**
+초음파 센서는 이와 같이 작동합니다.
+---
 
 ```
   if (funcState == true && distance < 15 && distance > 2.5) {
@@ -43,7 +45,8 @@ if (reading == HIGH) {
     delay(200 - distance2);
   } 
 ```
-**funcState가 참이고, 거리가 15에서 2.5 사이일 때 가까워 질수록 LED와 Buzzer의 빈도가 빨라지도록 구현했습니다.**
+funcState가 참이고, 거리가 15에서 2.5 사이일 때 가까워 질수록 LED와 Buzzer의 빈도가 빨라지도록 구현했습니다.
+---
 ```
 distance2 = map(distance, 2.5, 15, 200, 0);
 ```
