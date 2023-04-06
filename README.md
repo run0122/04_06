@@ -71,6 +71,6 @@ else {
     Timer1.setPwmDuty(buzzer, 0);
   }
 ```
-그 외의 값은 LED와 Buzzer가 작동하지 않도록 했습니다.
+**그 외의 값은 LED와 Buzzer가 작동하지 않도록 했습니다.**
 
 <hr/>
